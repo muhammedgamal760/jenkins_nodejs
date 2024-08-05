@@ -6,7 +6,7 @@ on:
       - staging 
       - master 
       - main 
- 
+  
 name: test  
  
 env:
