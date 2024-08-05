@@ -1,0 +1,13 @@
+name: test
+
+env:
+  repo: '${{ github.action_repository }}'
+
+jobs:
+  print-vars:
+    runs-on: ubuntu-latest
+    name: show vars
+    steps:
+      - name: print vars
+        run: |
+          echo repo_name = ${{ env.repo }}
