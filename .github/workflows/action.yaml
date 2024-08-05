@@ -1,3 +1,12 @@
+on:
+  push:
+    branches:
+      - preprod
+      - dev
+      - staging
+      - master
+      - main
+
 name: test
 
 env:
