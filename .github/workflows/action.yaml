@@ -5,7 +5,7 @@ on:
       - dev
       - staging  
       - master 
-      - main   
+      - main    
    
 name: test   
     
