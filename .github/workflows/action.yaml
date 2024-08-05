@@ -31,4 +31,4 @@ jobs:
         token: ${{ secrets.TOKEN_GITHUB }}
         repository: muhammedgamal760/grad_project
         event-type: test
-        client-payload: '{"repo": "${{ github.repository.name }}"}'
+        client-payload: '{"repo": "${{ github.repository }}"}'
