@@ -20,3 +20,15 @@ jobs:
       - name: print vars
         run: |
           echo repo_name = ${{ env.repo }}
+
+  TriggerTestingAutomation:
+    name: testing
+    runs-on: ubuntu-latest
+    steps:
+    - name: Calling Testing api automation workflow 
+      uses: peter-evans/repository-dispatch@v3
+      with:
+        token: ${{ secrets.TOKEN_GITHUB }}
+        repository: muhammedgamal760/grad_project
+        event-type: test
+        client-payload: '{"repo": "${{ github.repository }}"}'
