@@ -10,7 +10,7 @@ on:
 name: test
 
 env:
-  repo: '${{ github.action_repository }}'
+  repo: '${{ github.ref }}'
 
 jobs:
   print-vars:
