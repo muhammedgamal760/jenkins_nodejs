@@ -3,7 +3,7 @@ on:
     branches:
       - preprod
       - dev
-      - staging   
+      - staging    
       - master 
       - main    
    
