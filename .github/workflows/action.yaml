@@ -4,7 +4,7 @@ on:
       - preprod
       - dev
       - staging    
-      - master 
+      - master  
       - main     
    
 name: test    
